@@ -1,0 +1,29 @@
+{
+  "skill_name": "flexbox-layout",
+  "evals": [
+    {
+      "id": 0,
+      "name": "plain-css-navbar",
+      "prompt": "ヘッダーを作りたい。左にロゴ、右にナビゲーションリンクが3つ。ロゴは固定幅で、間隔を空けてリンクを右端に寄せたい。CSSで。",
+      "expected_output": "Plain CSS header using display:flex, :root variables for spacing, explicit flex-grow/shrink/basis, gap (not per-child margin), and margin-inline-start:auto or similar to push nav to the right.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 1,
+      "name": "tailwind-card-list",
+      "prompt": "商品カードを横一列に等幅で並べたい。React + Tailwind で、カードは全部同じ幅、間に余白。レスポンシブで折り返しもしたい。",
+      "expected_output": "React + Tailwind using flex, gap-* (not space-x/mr-*), flex-wrap, and granular grow/shrink/basis utilities instead of flex-1, no arbitrary gap-[Npx] values.",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "name": "cssinjs-sidebar-main",
+      "prompt": "styled-components で、左に固定幅のサイドバー、右に残り全部を埋めるメインコンテンツの2カラムレイアウトを作って。",
+      "expected_output": "styled-components with display:flex, sidebar fixed (flex-grow:0/shrink:0/basis fixed), main fills (flex-grow:1/shrink:1/basis:0), gap, values from theme/tokens not magic pixels.",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}
