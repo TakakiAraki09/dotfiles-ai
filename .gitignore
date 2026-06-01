@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+
+# Claude Code ローカル設定（環境固有・秘匿情報を含みうる）
+**/settings.local.json
+.claude/settings.local.json
+
+# 秘匿情報
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# install.sh が作るバックアップ
+*.bak.*
